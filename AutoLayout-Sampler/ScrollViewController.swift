@@ -30,18 +30,18 @@ class ScrollViewController: UIViewController {
         let height = view.bounds.height
         
         let view1 = UIView(frame: CGRect(x: width * 0, y: 0, width: width, height: height))
-        view1.backgroundColor = UIColor.redColor()
+        view1.backgroundColor = UIColor.red
         contentView.addSubview(view1)
         let view2 = UIView(frame: CGRect(x: width * 1, y: 0, width: width, height: height))
-        view2.backgroundColor = UIColor.blueColor()
+        view2.backgroundColor = UIColor.blue
         contentView.addSubview(view2)
         let view3 = UIView(frame: CGRect(x: width * 2, y: 0, width: width, height: height))
-        view3.backgroundColor = UIColor.greenColor()
+        view3.backgroundColor = UIColor.green
         contentView.addSubview(view3)
         
         contentViewWidth.constant = width * 2 + width
         
-        scrollView.pagingEnabled = true
+        scrollView.isPagingEnabled = true
         print(scrollView.bounds, scrollView.contentSize)
     }
     
